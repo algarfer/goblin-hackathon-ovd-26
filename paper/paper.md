@@ -225,5 +225,5 @@ and a single command. Ongoing work on a FHIR-aware mode
 (`rudof-fhir` <https://github.com/rudof-project/rudof-fhir> (accessed on July 1, 2026))
 aims to emit the canonical FHIR-RDF serialization idioms directly.
 
-# References
+## References
 
