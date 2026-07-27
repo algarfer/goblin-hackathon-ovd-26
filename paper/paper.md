@@ -26,6 +26,10 @@ authors:
     orcid: 0000-0003-1775-9921
     affiliation: 2
     role: Conceptualization - review
+  - name: Jose Emilio Labra-Gayo
+    orcid: 0000-0001-8907-5348
+    affiliation: 1
+    role: Conceptualization - review
 affiliations:
   - name: University of Oviedo
     ror: 006gksa02
