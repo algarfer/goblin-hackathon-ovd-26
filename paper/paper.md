@@ -69,7 +69,7 @@ from the FHIR ShEx schema using *rudof* [@cite:labra_gayo_rudof_2024], a
 schema-driven generator. Because the schema alone drives generation, the same
 tool that produces data for any ShEx or SHACL schema produces FHIR data, with no
 FHIR-specific implementation. The work was carried out as a use case at the GOBLIN
-hackathon (<https://dmki-tuwien.github.io/goblin-hackathon>).
+hackathon (<https://dmki-tuwien.github.io/goblin-hackathon> (accessed on July 1, 2026)).
 
 # Background: *rudof generate*
 
@@ -99,7 +99,7 @@ the generated graph. All of this behaviour is set by a single configuration file
 
 ## Input schema
 
-We used the authoritative FHIR R4 ShEx schema (<https://hl7.org/fhir/R4/fhir.shex>)
+We used the authoritative FHIR R4 ShEx schema (<https://hl7.org/fhir/R4/fhir.shex> (accessed on July 1, 2026))
 produced by the FHIR-to-ShEx build process [@cite:solbrig_modeling_2017][@cite:fhir_r4].
 It contains 684 shapes covering every R4 resource and datatype, so the generator
 operates under the same structural definitions the FHIR community uses for
@@ -214,7 +214,7 @@ alone.
 
 **Availability.** The modified FHIR ShEx schema variant, the generation configuration,
 the exact invocation, and the generated FHIR R4 RDF are available in the benchmark
-repository (<https://github.com/DiegoMfer/benchmarks-synthetic-data-generators>).
+repository (<https://github.com/DiegoMfer/benchmarks-synthetic-data-generators> (accessed on July 1, 2026)).
 
 # Conclusion
 Synthetic FHIR R4 RDF can be generated from the published FHIR ShEx schema alone,
@@ -222,7 +222,7 @@ using *rudof generate* and a short configuration file, without writing any
 domain-specific code. The approach is reproducible and configurable, and reduces
 the generation of FHIR data to schema selection, a one-line primitive rebinding,
 and a single command. Ongoing work on a FHIR-aware mode
-(`rudof-fhir` <https://github.com/rudof-project/rudof-fhir>)
+(`rudof-fhir` <https://github.com/rudof-project/rudof-fhir> (accessed on July 1, 2026))
 aims to emit the canonical FHIR-RDF serialization idioms directly.
 
 # References
