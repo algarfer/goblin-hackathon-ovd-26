@@ -61,15 +61,15 @@ generator configuration, and the invocation---so that the process is reproducibl
 
 # Introduction
 
-HL7 FHIR [@citation:fhir_r4] is the *de facto* standard for exchanging electronic
+HL7 FHIR [@citesAsAuthority:fhir_r4] is the *de facto* standard for exchanging electronic
 healthcare information, and it defines a canonical RDF representation of its
-resources [@citation:solbrig_modeling_2017]. Synthetic FHIR data in RDF is useful for
+resources [@citesAsAuthority:solbrig_modeling_2017]. Synthetic FHIR data in RDF is useful for
 exercising triple stores, SPARQL endpoints, validators, and terminology services
 without touching real patient records. Producing such data usually relies on
 domain-specific simulators that encode clinical knowledge.
 
 This note takes a different route: it generates synthetic FHIR R4 RDF directly
-from the FHIR ShEx schema using *rudof* [@citation:labra_gayo_rudof_2024], a
+from the FHIR ShEx schema using *rudof* [@usesMethodIn:labra_gayo_rudof_2024], a
 schema-driven generator. Because the schema alone drives generation, the same
 tool that produces data for any ShEx or SHACL schema produces FHIR data, with no
 FHIR-specific implementation. The work was carried out as a use case at the GOBLIN
@@ -77,8 +77,8 @@ hackathon (<https://dmki-tuwien.github.io/goblin-hackathon> (accessed on July 1,
 
 # Background: *rudof generate*
 
-*rudof* [@citation:labra_gayo_rudof_2024] is a Rust toolkit for handling RDF
-data models and shapes (ShEx and SHACL [@citation:validating_rdf_book]. Its generator,
+*rudof* [@usesMethodIn:labra_gayo_rudof_2024] is a Rust toolkit for handling RDF
+data models and shapes (ShEx and SHACL [@obtainsBackgroundFrom:validating_rdf_book]. Its generator,
 *rudof generate*, interprets a shapes schema as a specification of the
 instance data to produce: shape declarations become node types, and the triple
 constraints of each shape become the properties of its instances, with the
@@ -104,7 +104,7 @@ the generated graph. All of this behaviour is set by a single configuration file
 ## Input schema
 
 We used the authoritative FHIR R4 ShEx schema (<https://hl7.org/fhir/R4/fhir.shex> (accessed on July 1, 2026))
-produced by the FHIR-to-ShEx build process [@citation:solbrig_modeling_2017][@citation:fhir_r4].
+produced by the FHIR-to-ShEx build process [@usesMethodIn:solbrig_modeling_2017][@citesAsAuthority:fhir_r4].
 It contains 684 shapes covering every R4 resource and datatype, so the generator
 operates under the same structural definitions the FHIR community uses for
 validation, without any extraction or approximation step.
